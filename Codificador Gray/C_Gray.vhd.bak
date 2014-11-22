@@ -1,0 +1,37 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use.ieee.std_logic_unsigned.all;
+
+entity C_Gray is
+	port(
+		A : in std_logic_vector( 15 downto 0 );
+		B : in std_logic_vector( 15 downto 0 );
+		sel : in std_logic;
+		Y : out std_logic_vector( 15 downto 0 )
+	);
+end C_Gray;
+
+architecture rlt of C_Gray is
+signal a1, a2, a3, a4 :std_logic_vector(3 downto 0) ;
+begin
+process(A)
+begin
+	if( sel = '0') then
+		case A is
+			when A(3 downto 0) => a1 <= A(3)&(A(3)+A(2))&(A(2)+A(1))&(A(1)+A(0));
+			when A(7 downto 4) => a2 <= A(7)&(A(7)+A(6))&(A(6)+A(5))&(A(5)+A(4));
+			when A(11 downto 8) => a3 <= A(11)&(A(11)+A(10))&(A(10)+A(9))&(A(9)+A(8));
+			when A(15 downto 12) => a4 <= A(15)&(A(15)+A(14))&(A(14)+A(13))&(A(13)+A(12));
+		end case;
+	elsif
+		case B is
+			when B(3 downto 0) => a1 <= B(3)&(B(3)+B(2))&(B(2)+B(1))&(B(1)+B(0));
+			when B(7 downto 4) => a2 <= B(7)&(B(7)+B(6))&(B(6)+B(5))&(B(5)+B(4));
+			when B(11 downto 8) => a3 <= B(11)&(B(11)+B(10))&(B(10)+B(9))&(B(9)+B(8));
+			when B(15 downto 12) => a4 <= B(15)&(B(15)+B(14))&(B(14)+B(13))&(B(13)+B(12));
+		end case;
+	end if;
+end process;
+ Y <= a4&a3&a2&a1;
+end rtl;
