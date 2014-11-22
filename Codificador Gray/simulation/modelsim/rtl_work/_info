@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dD:\ALU\Codificador Gray\simulation\modelsim
 Ec_gray
-Z1 w1416680783
+Z1 w1416682034
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
@@ -19,7 +19,7 @@ VoTNBZT94T?6YgFn7]olMa2
 Z9 OV;C;10.1d;51
 31
 !i10b 1
-Z10 !s108 1416681122.157000
+Z10 !s108 1416682575.001000
 Z11 !s90 -reportprogress|300|-93|-work|work|D:/ALU/Codificador Gray/C_Gray.vhd|
 Z12 !s107 D:/ALU/Codificador Gray/C_Gray.vhd|
 Z13 o-93 -work work -O0
@@ -32,8 +32,8 @@ R5
 DEx4 work 6 c_gray 0 22 oTNBZT94T?6YgFn7]olMa2
 l17
 L15
-V[mhB]ncMFd`hO@FDh_f063
-!s100 RCmo151QYNzNmTWgERI1_2
+VE<h2XHaFPVfdk<bd<8oeA3
+!s100 @_df=`UN@17:BJCTh80i;0
 R9
 31
 !i10b 1

@@ -39,12 +39,3 @@ vsim -c -do Simula_cgray.do C_Gray
 # do Simula_cgray.do 
 # 0 ps
 # 10500 ps
-do Simula_cgray.do
-# 0 ps
-# 10500 ps
-do Simula_cgray.do
-# 0 ps
-# 10500 ps
-do Simula_cgray.do
-# 0 ps
-# 10500 ps
