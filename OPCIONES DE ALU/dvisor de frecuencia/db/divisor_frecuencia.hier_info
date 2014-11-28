@@ -1,0 +1,24 @@
+|divisor_frecuencia
+clock_50MHz => clock_1Hz~reg0.CLK
+clock_50MHz => clock_10Hz~reg0.CLK
+clock_50MHz => clock_100Hz~reg0.CLK
+clock_50MHz => clock_1KHz~reg0.CLK
+clock_50MHz => clock_10KHz~reg0.CLK
+clock_50MHz => clock_100KHz~reg0.CLK
+clock_50MHz => clock_1MHz~reg0.CLK
+clock_50MHz => clock_1MHz_int.CLK
+clock_50MHz => count_1MHz[0].CLK
+clock_50MHz => count_1MHz[1].CLK
+clock_50MHz => count_1MHz[2].CLK
+clock_50MHz => count_1MHz[3].CLK
+clock_50MHz => count_1MHz[4].CLK
+clock_50MHz => count_1MHz[5].CLK
+clock_1MHz <= clock_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_100KHz <= clock_100KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_10KHz <= clock_10KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1KHz <= clock_1KHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_100Hz <= clock_100Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_10Hz <= clock_10Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clock_1Hz <= clock_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

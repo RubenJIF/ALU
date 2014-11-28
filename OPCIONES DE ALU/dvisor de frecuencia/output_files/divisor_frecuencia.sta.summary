@@ -1,0 +1,173 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'clock_50MHz'
+Slack : -1.095
+TNS   : -7.330
+
+Type  : Slow Model Setup 'clock_1KHz_int'
+Slack : -0.070
+TNS   : -0.146
+
+Type  : Slow Model Setup 'clock_10Hz_int'
+Slack : -0.070
+TNS   : -0.137
+
+Type  : Slow Model Setup 'clock_100Hz_int'
+Slack : -0.069
+TNS   : -0.146
+
+Type  : Slow Model Setup 'clock_10KHz_int'
+Slack : -0.069
+TNS   : -0.106
+
+Type  : Slow Model Setup 'clock_100KHz_int'
+Slack : -0.068
+TNS   : -0.136
+
+Type  : Slow Model Setup 'clock_1MHz_int'
+Slack : -0.062
+TNS   : -0.133
+
+Type  : Slow Model Hold 'clock_1KHz_int'
+Slack : -2.027
+TNS   : -2.027
+
+Type  : Slow Model Hold 'clock_50MHz'
+Slack : -1.930
+TNS   : -10.647
+
+Type  : Slow Model Hold 'clock_100KHz_int'
+Slack : -1.865
+TNS   : -1.865
+
+Type  : Slow Model Hold 'clock_1MHz_int'
+Slack : -1.732
+TNS   : -1.732
+
+Type  : Slow Model Hold 'clock_10KHz_int'
+Slack : -1.730
+TNS   : -1.730
+
+Type  : Slow Model Hold 'clock_100Hz_int'
+Slack : -1.675
+TNS   : -1.675
+
+Type  : Slow Model Hold 'clock_10Hz_int'
+Slack : 0.391
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_50MHz'
+Slack : -1.380
+TNS   : -15.380
+
+Type  : Slow Model Minimum Pulse Width 'clock_100Hz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_100KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_10Hz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_10KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_1KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Slow Model Minimum Pulse Width 'clock_1MHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Setup 'clock_50MHz'
+Slack : -0.025
+TNS   : -0.150
+
+Type  : Fast Model Setup 'clock_10Hz_int'
+Slack : 0.504
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock_10KHz_int'
+Slack : 0.505
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock_1MHz_int'
+Slack : 0.506
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock_1KHz_int'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock_100Hz_int'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Fast Model Setup 'clock_100KHz_int'
+Slack : 0.508
+TNS   : 0.000
+
+Type  : Fast Model Hold 'clock_50MHz'
+Slack : -1.249
+TNS   : -7.014
+
+Type  : Fast Model Hold 'clock_1KHz_int'
+Slack : -1.208
+TNS   : -1.208
+
+Type  : Fast Model Hold 'clock_100KHz_int'
+Slack : -1.109
+TNS   : -1.109
+
+Type  : Fast Model Hold 'clock_1MHz_int'
+Slack : -1.070
+TNS   : -1.070
+
+Type  : Fast Model Hold 'clock_10KHz_int'
+Slack : -1.066
+TNS   : -1.066
+
+Type  : Fast Model Hold 'clock_100Hz_int'
+Slack : -1.026
+TNS   : -1.026
+
+Type  : Fast Model Hold 'clock_10Hz_int'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_50MHz'
+Slack : -1.380
+TNS   : -15.380
+
+Type  : Fast Model Minimum Pulse Width 'clock_100Hz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_100KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_10Hz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_10KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_1KHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+Type  : Fast Model Minimum Pulse Width 'clock_1MHz_int'
+Slack : -0.500
+TNS   : -4.000
+
+------------------------------------------------------------

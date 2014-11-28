@@ -1,0 +1,25 @@
+|reg_desplaz_datos
+reloj => ff[0].CLK
+reloj => ff[1].CLK
+reloj => ff[2].CLK
+reloj => ff[3].CLK
+dent[0] => Mux3.IN0
+dent[1] => Mux2.IN0
+dent[2] => Mux1.IN0
+dent[3] => Mux0.IN0
+ser_ent => Mux0.IN1
+ser_ent => Mux3.IN1
+modo[0] => Mux0.IN3
+modo[0] => Mux1.IN2
+modo[0] => Mux2.IN2
+modo[0] => Mux3.IN3
+modo[1] => Mux0.IN2
+modo[1] => Mux1.IN1
+modo[1] => Mux2.IN1
+modo[1] => Mux3.IN2
+q[0] <= ff[0].DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= ff[1].DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= ff[2].DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= ff[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

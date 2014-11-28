@@ -1,0 +1,30 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity reg_desplaz_datos is
+port (
+		reloj	: in 	bit;
+		dent	: in 	bit_vector( 3	downto 0);
+		ser_ent: in	bit;
+		modo	: in	integer range 0 to 3;
+		q	: out	bit_vector( 3	downto 0));
+end ;
+
+architecture rtl of reg_desplaz_datos is
+begin
+	process(reloj)
+	variable ff:bit_vector(3 downto 0);
+	begin
+		if (reloj' event and reloj='1') then
+			case modo is
+				when 0 => ff := ff;
+				when 1 => ff(2 downto 0) := ff(3 downto 1);
+							 ff(3) := ser_ent;
+				when 2 => ff(3 downto 1) := ff(2 downto 0);
+							 ff(0) := ser_ent; 
+				when 3 => ff := dent;
+				end case;
+				end if;
+			q <= ff;
+		end process;
+	end rtl;	

@@ -1,0 +1,43 @@
+|semaforo
+clk => pr_estado~1.DATAIN
+dn => Selector11.IN3
+dn => nx_estado.S1.DATAB
+dn => nx_estado.S2.DATAB
+dn => nx_estado.S3.DATAB
+dn => nx_estado.S4.DATAB
+dn => nx_estado.S5.DATAB
+dn => nx_estado.S6.DATAB
+dn => nx_estado.S7.DATAB
+dn => nx_estado.S8.DATAB
+dn => nx_estado.S9.DATAB
+dn => nx_estado.S10.DATAB
+dn => nx_estado.S11.DATAB
+dn => nx_estado.S12.DATAB
+dn => nx_estado.S13.DATAB
+dn => nx_estado.S14.DATAB
+dn => nx_estado.S15.DATAB
+dn => nx_estado.S16.DATAB
+dn => nx_estado.S17.DATAB
+dn => nx_estado.S18.DATAB
+dn => nx_estado.S19.DATAB
+dn => nx_estado.S20.DATAB
+dn => nx_estado.S21.DATAB
+dn => nx_estado.S22.DATAB
+dn => nx_estado.S23.DATAB
+dn => Selector14.IN1
+dn => Selector13.IN1
+reset => pr_estado~3.DATAIN
+q[0] <= q[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= q[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[3] <= q[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[4] <= q[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[5] <= q[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[6] <= q[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[7] <= q[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[8] <= q[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[9] <= q[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[10] <= q[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+q[11] <= q[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

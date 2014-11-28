@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.miscomponetes.all;
+
+entity cont_cero is
+port (
+		A	: in 	std_logic_vector( 15	downto 0);
+		B	: in 	std_logic_vector( 15	downto 0);
+		sel: in 	std_logic;
+		Y	: out	std_logic_vector( 15	downto 0));
+end cont_cero;
+
+architecture comportamiento of cont_cero is
+signal num	: std_logic_vector( 15	downto 0);
+signal Y1	: std_logic_vector( 2 downto 0);
+begin
+if (sel = '0') then 
+	num <= A;
+	num(3 downto 0) <= "0000" when y1 = "100" else
+
+		"0001" when Y1 ="011";
+		"0010" when Y1 ="011";
+		"0011" when Y1 ="010";
+		"0100" when Y1 ="011";
+		"0101" when Y1 ="010";
+		"0110" when Y1 ="010";
+		"0111" when Y1 ="001";
+		"1000" when Y1 ="011";
+		"1001" when Y1 ="010";
+		"1010" when Y1 ="010";
+		"1011" when Y1 ="001";
+		"1100" when Y1 ="010";
+		"1101" when Y1 ="001";
+		"1110" when Y1 ="001";
+		"1111" when Y1 ="000";
+		when others => null;
+		end if;
+		end process;

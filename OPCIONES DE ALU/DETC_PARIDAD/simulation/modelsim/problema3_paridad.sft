@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {problema3_paridad.vho problema3_paridad_vhd.sdo}}
+	{{"Fast Model"} {problema3_paridad_fast.vho problema3_paridad_vhd_fast.sdo}}
+}

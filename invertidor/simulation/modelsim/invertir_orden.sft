@@ -1,0 +1,5 @@
+set tool_name "ModelSim-Altera (VHDL)"
+set corner_file_list {
+	{{"Slow Model"} {invertir_orden.vho invertir_orden_vhd.sdo}}
+	{{"Fast Model"} {invertir_orden_fast.vho invertir_orden_vhd_fast.sdo}}
+}

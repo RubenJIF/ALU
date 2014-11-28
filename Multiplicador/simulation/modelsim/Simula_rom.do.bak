@@ -1,0 +1,28 @@
+restart -force -nowave
+add wave -logic Read
+add wave -logic Address
+add wave -logic clock
+add wave -logic Enable
+add wave -logic Reset
+add wave -logic Y
+
+
+force -freeze Read 1
+force -freeze clock 1
+force -deposit Enable 1
+force -deposit Reset 0
+force -deposit Address 00000
+run 2ns
+force -freeze Read 1
+force -freeze clock 1
+force -deposit Enable 1
+force -deposit Reset 0
+force -deposit Address 00111
+run 2ns
+force -freeze Read 1
+force -freeze clock 1
+force -deposit Enable 1
+force -deposit Reset 0
+force -deposit Address 00110
+run 2ns
+wave zoomfull

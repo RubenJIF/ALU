@@ -1,0 +1,12 @@
+restart -force -nowave
+add wave -logic a
+add wave -logic b
+add wave -logic cin
+add wave -logic x1
+add wave -logic cout
+
+force -freeze cin 0
+force -deposit a 0011111001111011
+force -deposit b 0101010111100101}
+run 2ns
+wave zoomfull

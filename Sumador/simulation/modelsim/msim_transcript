@@ -1,0 +1,60 @@
+# Reading D:/altera/13.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do Sumador_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\altera\13.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {D:/ALU/Sumador/Sumador.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity Sumador
+# -- Compiling architecture behave of Sumador
+# 
+vsim work.sumador
+# vsim work.sumador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sumador(behave)
+vsim -c -do Simula_sumador.do Sumador
+# vsim -do Simula_sumador.do -c Sumador 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.sumador(behave)
+# do Simula_sumador.do 
+# WARNING: No extended dataflow license exists
+do Simula_sumador.do
+# ** Error: Value length (18) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0101010111100101\}.
+# Error in macro ./Simula_sumador.do line 10
+# Value length (18) does not equal array index length (16).
+# 
+# ** Error: (vsim-4011) Invalid force value: 0101010111100101\}.
+# 
+#     while executing
+# "force -deposit b 0101010111100101}"
+do Simula_sumador.do
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /sumador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /sumador
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /sumador
+# 0 ps
+# 2100 ps

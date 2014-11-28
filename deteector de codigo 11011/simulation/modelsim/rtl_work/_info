@@ -1,0 +1,44 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Invitado\Desktop\Nueva carpeta\deteector de codigo 11011\simulation\modelsim
+Edet_11011
+Z1 w1417118920
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dC:\Users\Invitado\Desktop\Nueva carpeta\deteector de codigo 11011\simulation\modelsim
+Z7 8C:/Users/Invitado/Desktop/Nueva carpeta/deteector de codigo 11011/det_11011.vhd
+Z8 FC:/Users/Invitado/Desktop/Nueva carpeta/deteector de codigo 11011/det_11011.vhd
+l0
+L7
+VWbk:B0Ho]7]UdH9Ye`kCR2
+!s100 Yd<V2oUiH^PAQUfZR1Vn91
+Z9 OV;C;10.1d;51
+31
+!i10b 1
+Z10 !s108 1417118942.367000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/Invitado/Desktop/Nueva carpeta/deteector de codigo 11011/det_11011.vhd|
+Z12 !s107 C:/Users/Invitado/Desktop/Nueva carpeta/deteector de codigo 11011/det_11011.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+Artl
+R2
+R3
+R4
+R5
+DEx4 work 9 det_11011 0 22 Wbk:B0Ho]7]UdH9Ye`kCR2
+l21
+L18
+VUbSj?[jo`A77V@i0[JQJi1
+!s100 RL;nJ3_7hQ;gBGooIVgI@2
+R9
+31
+!i10b 1
+R10
+R11
+R12
+R13
+R14

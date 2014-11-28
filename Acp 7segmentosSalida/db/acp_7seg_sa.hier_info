@@ -1,0 +1,26 @@
+|acp_7seg_sa
+ye[0] => ys[0].DATAIN
+ye[1] => ys[1].DATAIN
+ye[2] => ys[2].DATAIN
+ye[3] => ys[3].DATAIN
+ye[4] => ys[4].DATAIN
+ye[5] => ys[5].DATAIN
+ye[6] => ys[6].DATAIN
+ys[0] <= ye[0].DB_MAX_OUTPUT_PORT_TYPE
+ys[1] <= ye[1].DB_MAX_OUTPUT_PORT_TYPE
+ys[2] <= ye[2].DB_MAX_OUTPUT_PORT_TYPE
+ys[3] <= ye[3].DB_MAX_OUTPUT_PORT_TYPE
+ys[4] <= ye[4].DB_MAX_OUTPUT_PORT_TYPE
+ys[5] <= ye[5].DB_MAX_OUTPUT_PORT_TYPE
+ys[6] <= ye[6].DB_MAX_OUTPUT_PORT_TYPE
+ys[7] <= <GND>
+ys[8] <= <GND>
+ys[9] <= <GND>
+ys[10] <= <GND>
+ys[11] <= <GND>
+ys[12] <= <GND>
+ys[13] <= <GND>
+ys[14] <= <GND>
+ys[15] <= <GND>
+
+

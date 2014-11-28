@@ -1,0 +1,1805 @@
+TimeQuest Timing Analyzer report for divisor_frecuencia
+Thu Nov 27 18:24:53 2014
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. TimeQuest Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Slow Model Fmax Summary
+  6. Slow Model Setup Summary
+  7. Slow Model Hold Summary
+  8. Slow Model Recovery Summary
+  9. Slow Model Removal Summary
+ 10. Slow Model Minimum Pulse Width Summary
+ 11. Slow Model Setup: 'clock_50MHz'
+ 12. Slow Model Setup: 'clock_1KHz_int'
+ 13. Slow Model Setup: 'clock_10Hz_int'
+ 14. Slow Model Setup: 'clock_100Hz_int'
+ 15. Slow Model Setup: 'clock_10KHz_int'
+ 16. Slow Model Setup: 'clock_100KHz_int'
+ 17. Slow Model Setup: 'clock_1MHz_int'
+ 18. Slow Model Hold: 'clock_1KHz_int'
+ 19. Slow Model Hold: 'clock_50MHz'
+ 20. Slow Model Hold: 'clock_100KHz_int'
+ 21. Slow Model Hold: 'clock_1MHz_int'
+ 22. Slow Model Hold: 'clock_10KHz_int'
+ 23. Slow Model Hold: 'clock_100Hz_int'
+ 24. Slow Model Hold: 'clock_10Hz_int'
+ 25. Slow Model Minimum Pulse Width: 'clock_50MHz'
+ 26. Slow Model Minimum Pulse Width: 'clock_100Hz_int'
+ 27. Slow Model Minimum Pulse Width: 'clock_100KHz_int'
+ 28. Slow Model Minimum Pulse Width: 'clock_10Hz_int'
+ 29. Slow Model Minimum Pulse Width: 'clock_10KHz_int'
+ 30. Slow Model Minimum Pulse Width: 'clock_1KHz_int'
+ 31. Slow Model Minimum Pulse Width: 'clock_1MHz_int'
+ 32. Clock to Output Times
+ 33. Minimum Clock to Output Times
+ 34. Fast Model Setup Summary
+ 35. Fast Model Hold Summary
+ 36. Fast Model Recovery Summary
+ 37. Fast Model Removal Summary
+ 38. Fast Model Minimum Pulse Width Summary
+ 39. Fast Model Setup: 'clock_50MHz'
+ 40. Fast Model Setup: 'clock_10Hz_int'
+ 41. Fast Model Setup: 'clock_10KHz_int'
+ 42. Fast Model Setup: 'clock_1MHz_int'
+ 43. Fast Model Setup: 'clock_1KHz_int'
+ 44. Fast Model Setup: 'clock_100Hz_int'
+ 45. Fast Model Setup: 'clock_100KHz_int'
+ 46. Fast Model Hold: 'clock_50MHz'
+ 47. Fast Model Hold: 'clock_1KHz_int'
+ 48. Fast Model Hold: 'clock_100KHz_int'
+ 49. Fast Model Hold: 'clock_1MHz_int'
+ 50. Fast Model Hold: 'clock_10KHz_int'
+ 51. Fast Model Hold: 'clock_100Hz_int'
+ 52. Fast Model Hold: 'clock_10Hz_int'
+ 53. Fast Model Minimum Pulse Width: 'clock_50MHz'
+ 54. Fast Model Minimum Pulse Width: 'clock_100Hz_int'
+ 55. Fast Model Minimum Pulse Width: 'clock_100KHz_int'
+ 56. Fast Model Minimum Pulse Width: 'clock_10Hz_int'
+ 57. Fast Model Minimum Pulse Width: 'clock_10KHz_int'
+ 58. Fast Model Minimum Pulse Width: 'clock_1KHz_int'
+ 59. Fast Model Minimum Pulse Width: 'clock_1MHz_int'
+ 60. Clock to Output Times
+ 61. Minimum Clock to Output Times
+ 62. Multicorner Timing Analysis Summary
+ 63. Clock to Output Times
+ 64. Minimum Clock to Output Times
+ 65. Setup Transfers
+ 66. Hold Transfers
+ 67. Report TCCS
+ 68. Report RSKM
+ 69. Unconstrained Paths
+ 70. TimeQuest Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; TimeQuest Timing Analyzer Summary                                       ;
++--------------------+----------------------------------------------------+
+; Quartus II Version ; Version 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name      ; divisor_frecuencia                                 ;
+; Device Family      ; Cyclone II                                         ;
+; Device Name        ; EP2C5T144C6                                        ;
+; Timing Models      ; Final                                              ;
+; Delay Model        ; Combined                                           ;
+; Rise/Fall Delays   ; Unavailable                                        ;
++--------------------+----------------------------------------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                             ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; Clock Name       ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets              ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+; clock_1KHz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_1KHz_int }   ;
+; clock_1MHz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_1MHz_int }   ;
+; clock_10Hz_int   ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_10Hz_int }   ;
+; clock_10KHz_int  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_10KHz_int }  ;
+; clock_50MHz      ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_50MHz }      ;
+; clock_100Hz_int  ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_100Hz_int }  ;
+; clock_100KHz_int ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clock_100KHz_int } ;
++------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+----------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Slow Model Fmax Summary                                                                                         ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name       ; Note                                                          ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+; 477.33 MHz ; 420.17 MHz      ; clock_50MHz      ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 934.58 MHz ; 500.0 MHz       ; clock_10Hz_int   ; limit due to high minimum pulse width violation (tch)         ;
+; 934.58 MHz ; 500.0 MHz       ; clock_1KHz_int   ; limit due to high minimum pulse width violation (tch)         ;
+; 935.45 MHz ; 500.0 MHz       ; clock_100Hz_int  ; limit due to high minimum pulse width violation (tch)         ;
+; 935.45 MHz ; 500.0 MHz       ; clock_10KHz_int  ; limit due to high minimum pulse width violation (tch)         ;
+; 936.33 MHz ; 500.0 MHz       ; clock_100KHz_int ; limit due to high minimum pulse width violation (tch)         ;
+; 941.62 MHz ; 500.0 MHz       ; clock_1MHz_int   ; limit due to high minimum pulse width violation (tch)         ;
++------------+-----------------+------------------+---------------------------------------------------------------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++-------------------------------------------+
+; Slow Model Setup Summary                  ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_50MHz      ; -1.095 ; -7.330        ;
+; clock_1KHz_int   ; -0.070 ; -0.146        ;
+; clock_10Hz_int   ; -0.070 ; -0.137        ;
+; clock_100Hz_int  ; -0.069 ; -0.146        ;
+; clock_10KHz_int  ; -0.069 ; -0.106        ;
+; clock_100KHz_int ; -0.068 ; -0.136        ;
+; clock_1MHz_int   ; -0.062 ; -0.133        ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Slow Model Hold Summary                   ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_1KHz_int   ; -2.027 ; -2.027        ;
+; clock_50MHz      ; -1.930 ; -10.647       ;
+; clock_100KHz_int ; -1.865 ; -1.865        ;
+; clock_1MHz_int   ; -1.732 ; -1.732        ;
+; clock_10KHz_int  ; -1.730 ; -1.730        ;
+; clock_100Hz_int  ; -1.675 ; -1.675        ;
+; clock_10Hz_int   ; 0.391  ; 0.000         ;
++------------------+--------+---------------+
+
+
+-------------------------------
+; Slow Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Slow Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++-------------------------------------------+
+; Slow Model Minimum Pulse Width Summary    ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_50MHz      ; -1.380 ; -15.380       ;
+; clock_100Hz_int  ; -0.500 ; -4.000        ;
+; clock_100KHz_int ; -0.500 ; -4.000        ;
+; clock_10Hz_int   ; -0.500 ; -4.000        ;
+; clock_10KHz_int  ; -0.500 ; -4.000        ;
+; clock_1KHz_int   ; -0.500 ; -4.000        ;
+; clock_1MHz_int   ; -0.500 ; -4.000        ;
++------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_50MHz'                                                                                         ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node           ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; -1.095 ; count_1MHz[2]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.095 ; count_1MHz[2]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.095 ; count_1MHz[2]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.095 ; count_1MHz[2]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.095 ; count_1MHz[2]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.095 ; count_1MHz[2]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.131      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -1.056 ; count_1MHz[3]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 2.092      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.961 ; count_1MHz[0]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.997      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.824 ; count_1MHz[1]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.860      ;
+; -0.760 ; count_1MHz[4]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.030     ; 1.766      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.704 ; count_1MHz[5]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.740      ;
+; -0.626 ; count_1MHz[3]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.030     ; 1.632      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.581 ; count_1MHz[4]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.617      ;
+; -0.485 ; count_1MHz[5]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.030     ; 1.491      ;
+; 0.530  ; clock_1Hz_int    ; clock_1Hz~reg0    ; clock_10Hz_int   ; clock_50MHz ; 1.000        ; 0.287      ; 0.793      ;
+; 1.733  ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 0.500        ; 2.350      ; 1.403      ;
+; 2.004  ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 0.500        ; 2.333      ; 1.115      ;
+; 2.012  ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 0.500        ; 2.333      ; 1.107      ;
+; 2.151  ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 0.500        ; 2.333      ; 0.968      ;
+; 2.167  ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 0.500        ; 2.350      ; 0.969      ;
+; 2.200  ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 0.500        ; 2.350      ; 0.936      ;
+; 2.233  ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 1.000        ; 2.350      ; 1.403      ;
+; 2.504  ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 1.000        ; 2.333      ; 1.115      ;
+; 2.512  ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 1.000        ; 2.333      ; 1.107      ;
+; 2.651  ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 1.000        ; 2.333      ; 0.968      ;
+; 2.667  ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 1.000        ; 2.350      ; 0.969      ;
+; 2.700  ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 1.000        ; 2.350      ; 0.936      ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_1KHz_int'                                                                                     ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock    ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; -0.070 ; count_100Hz[1]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 1.106      ;
+; -0.069 ; count_100Hz[1]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 1.105      ;
+; -0.040 ; count_100Hz[2]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 1.076      ;
+; -0.007 ; count_100Hz[2]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 1.043      ;
+; 0.066  ; count_100Hz[1]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.970      ;
+; 0.230  ; count_100Hz[0]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.806      ;
+; 0.231  ; count_100Hz[0]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.805      ;
+; 0.232  ; count_100Hz[0]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.804      ;
+; 0.379  ; count_100Hz[2]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_100Hz[0]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_100Hz[1]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 2.297  ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 0.500        ; 2.168      ; 0.657      ;
+; 2.797  ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 1.000        ; 2.168      ; 0.657      ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_10Hz_int'                                                                                ;
++--------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; Slack  ; From Node     ; To Node       ; Launch Clock   ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; -0.070 ; count_1Hz[0]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 1.106      ;
+; -0.067 ; count_1Hz[0]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 1.103      ;
+; -0.029 ; count_1Hz[2]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 1.065      ;
+; 0.004  ; count_1Hz[2]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 1.032      ;
+; 0.234  ; count_1Hz[1]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.802      ;
+; 0.234  ; count_1Hz[1]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.802      ;
+; 0.237  ; count_1Hz[0]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.799      ;
+; 0.237  ; count_1Hz[1]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.799      ;
+; 0.379  ; clock_1Hz_int ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_1Hz[2]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_1Hz[0]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_1Hz[1]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.657      ;
++--------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_100Hz_int'                                                                                   ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -0.069 ; count_10Hz[0]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 1.105      ;
+; -0.068 ; count_10Hz[0]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 1.104      ;
+; -0.042 ; count_10Hz[1]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 1.078      ;
+; -0.009 ; count_10Hz[2]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 1.045      ;
+; 0.066  ; count_10Hz[0]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.970      ;
+; 0.231  ; count_10Hz[1]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.805      ;
+; 0.231  ; count_10Hz[1]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.805      ;
+; 0.235  ; count_10Hz[2]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.801      ;
+; 0.379  ; count_10Hz[2]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_10Hz[0]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_10Hz[1]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 1.945  ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 0.500        ; 1.816      ; 0.657      ;
+; 2.445  ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 1.000        ; 1.816      ; 0.657      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_10KHz_int'                                                                                   ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -0.069 ; count_1KHz[1]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 1.105      ;
+; -0.038 ; count_1KHz[0]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 1.074      ;
+; -0.037 ; count_1KHz[0]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 1.073      ;
+; 0.002  ; count_1KHz[2]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 1.034      ;
+; 0.239  ; count_1KHz[0]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.797      ;
+; 0.239  ; count_1KHz[1]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.797      ;
+; 0.240  ; count_1KHz[1]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.796      ;
+; 0.247  ; count_1KHz[2]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.789      ;
+; 0.379  ; count_1KHz[2]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_1KHz[0]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_1KHz[1]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 2.000  ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 0.500        ; 1.871      ; 0.657      ;
+; 2.500  ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 1.000        ; 1.871      ; 0.657      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_100KHz_int'                                                                                      ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; -0.068 ; count_10KHz[1]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 1.104      ;
+; -0.068 ; count_10KHz[1]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 1.104      ;
+; -0.034 ; count_10KHz[0]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 1.070      ;
+; 0.002  ; count_10KHz[2]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 1.034      ;
+; 0.062  ; count_10KHz[1]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.974      ;
+; 0.238  ; count_10KHz[0]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.798      ;
+; 0.239  ; count_10KHz[0]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.797      ;
+; 0.246  ; count_10KHz[2]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.790      ;
+; 0.379  ; count_10KHz[2]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_10KHz[0]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_10KHz[1]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 2.135  ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 0.500        ; 2.006      ; 0.657      ;
+; 2.635  ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 1.000        ; 2.006      ; 0.657      ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Setup: 'clock_1MHz_int'                                                                                        ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; -0.062 ; count_100KHz[2]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 1.098      ;
+; -0.036 ; count_100KHz[1]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 1.072      ;
+; -0.035 ; count_100KHz[2]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 1.071      ;
+; -0.035 ; count_100KHz[1]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 1.071      ;
+; 0.237  ; count_100KHz[0]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.799      ;
+; 0.238  ; count_100KHz[0]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.798      ;
+; 0.239  ; count_100KHz[0]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.797      ;
+; 0.239  ; count_100KHz[1]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.797      ;
+; 0.379  ; count_100KHz[2]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_100KHz[0]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 0.379  ; count_100KHz[1]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.657      ;
+; 2.002  ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 0.500        ; 1.873      ; 0.657      ;
+; 2.502  ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 1.000        ; 1.873      ; 0.657      ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_1KHz_int'                                                                                      ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock    ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; -2.027 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 0.000        ; 2.168      ; 0.657      ;
+; -1.527 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; -0.500       ; 2.168      ; 0.657      ;
+; 0.391  ; count_100Hz[1]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_100Hz[2]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_100Hz[0]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.538  ; count_100Hz[0]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.804      ;
+; 0.539  ; count_100Hz[0]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.805      ;
+; 0.540  ; count_100Hz[0]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.806      ;
+; 0.704  ; count_100Hz[1]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.970      ;
+; 0.777  ; count_100Hz[2]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 1.043      ;
+; 0.810  ; count_100Hz[2]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 1.076      ;
+; 0.839  ; count_100Hz[1]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 1.105      ;
+; 0.840  ; count_100Hz[1]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 1.106      ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_50MHz'                                                                                          ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node           ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; -1.930 ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 0.000        ; 2.350      ; 0.936      ;
+; -1.897 ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 0.000        ; 2.350      ; 0.969      ;
+; -1.881 ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 0.000        ; 2.333      ; 0.968      ;
+; -1.742 ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 0.000        ; 2.333      ; 1.107      ;
+; -1.734 ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 0.000        ; 2.333      ; 1.115      ;
+; -1.463 ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 0.000        ; 2.350      ; 1.403      ;
+; -1.430 ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; -0.500       ; 2.350      ; 0.936      ;
+; -1.397 ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; -0.500       ; 2.350      ; 0.969      ;
+; -1.381 ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; -0.500       ; 2.333      ; 0.968      ;
+; -1.242 ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; -0.500       ; 2.333      ; 1.107      ;
+; -1.234 ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; -0.500       ; 2.333      ; 1.115      ;
+; -0.963 ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; -0.500       ; 2.350      ; 1.403      ;
+; 0.240  ; clock_1Hz_int    ; clock_1Hz~reg0    ; clock_10Hz_int   ; clock_50MHz ; 0.000        ; 0.287      ; 0.793      ;
+; 0.529  ; count_1MHz[5]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.795      ;
+; 0.808  ; count_1MHz[1]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.074      ;
+; 0.816  ; count_1MHz[3]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.082      ;
+; 0.843  ; count_1MHz[0]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.109      ;
+; 0.845  ; count_1MHz[2]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.111      ;
+; 0.852  ; count_1MHz[4]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.118      ;
+; 1.191  ; count_1MHz[1]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.457      ;
+; 1.199  ; count_1MHz[3]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.465      ;
+; 1.229  ; count_1MHz[0]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.495      ;
+; 1.231  ; count_1MHz[2]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.497      ;
+; 1.238  ; count_1MHz[4]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.504      ;
+; 1.255  ; count_1MHz[5]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.030     ; 1.491      ;
+; 1.262  ; count_1MHz[1]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.528      ;
+; 1.270  ; count_1MHz[3]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.536      ;
+; 1.300  ; count_1MHz[0]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.566      ;
+; 1.302  ; count_1MHz[2]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.568      ;
+; 1.333  ; count_1MHz[1]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.599      ;
+; 1.351  ; count_1MHz[4]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.617      ;
+; 1.351  ; count_1MHz[4]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.617      ;
+; 1.351  ; count_1MHz[4]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.617      ;
+; 1.351  ; count_1MHz[4]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.617      ;
+; 1.371  ; count_1MHz[0]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.637      ;
+; 1.373  ; count_1MHz[2]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.639      ;
+; 1.396  ; count_1MHz[3]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.030     ; 1.632      ;
+; 1.404  ; count_1MHz[1]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.670      ;
+; 1.442  ; count_1MHz[0]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.708      ;
+; 1.474  ; count_1MHz[5]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.740      ;
+; 1.474  ; count_1MHz[5]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.740      ;
+; 1.474  ; count_1MHz[5]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.740      ;
+; 1.474  ; count_1MHz[5]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.740      ;
+; 1.474  ; count_1MHz[5]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.740      ;
+; 1.513  ; count_1MHz[0]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.779      ;
+; 1.530  ; count_1MHz[4]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.030     ; 1.766      ;
+; 1.594  ; count_1MHz[1]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.860      ;
+; 1.826  ; count_1MHz[3]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 2.092      ;
+; 1.826  ; count_1MHz[3]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 2.092      ;
+; 1.826  ; count_1MHz[3]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 2.092      ;
+; 1.865  ; count_1MHz[2]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 2.131      ;
+; 1.865  ; count_1MHz[2]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 2.131      ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_100KHz_int'                                                                                       ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; -1.865 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 0.000        ; 2.006      ; 0.657      ;
+; -1.365 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; -0.500       ; 2.006      ; 0.657      ;
+; 0.391  ; count_10KHz[1]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_10KHz[0]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_10KHz[2]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.524  ; count_10KHz[2]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.790      ;
+; 0.531  ; count_10KHz[0]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.797      ;
+; 0.532  ; count_10KHz[0]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.798      ;
+; 0.708  ; count_10KHz[1]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.974      ;
+; 0.768  ; count_10KHz[2]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 1.034      ;
+; 0.804  ; count_10KHz[0]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 1.070      ;
+; 0.838  ; count_10KHz[1]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 1.104      ;
+; 0.838  ; count_10KHz[1]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 1.104      ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_1MHz_int'                                                                                         ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; -1.732 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 0.000        ; 1.873      ; 0.657      ;
+; -1.232 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; -0.500       ; 1.873      ; 0.657      ;
+; 0.391  ; count_100KHz[1]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_100KHz[2]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_100KHz[0]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.531  ; count_100KHz[0]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.797      ;
+; 0.531  ; count_100KHz[1]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.797      ;
+; 0.532  ; count_100KHz[0]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.798      ;
+; 0.533  ; count_100KHz[0]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.799      ;
+; 0.805  ; count_100KHz[2]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 1.071      ;
+; 0.805  ; count_100KHz[1]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 1.071      ;
+; 0.806  ; count_100KHz[1]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 1.072      ;
+; 0.832  ; count_100KHz[2]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 1.098      ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_10KHz_int'                                                                                    ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -1.730 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 0.000        ; 1.871      ; 0.657      ;
+; -1.230 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; -0.500       ; 1.871      ; 0.657      ;
+; 0.391  ; count_1KHz[0]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_1KHz[1]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_1KHz[2]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.523  ; count_1KHz[2]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.789      ;
+; 0.530  ; count_1KHz[1]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.796      ;
+; 0.531  ; count_1KHz[0]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.797      ;
+; 0.531  ; count_1KHz[1]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.797      ;
+; 0.768  ; count_1KHz[2]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 1.034      ;
+; 0.807  ; count_1KHz[0]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 1.073      ;
+; 0.808  ; count_1KHz[0]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 1.074      ;
+; 0.839  ; count_1KHz[1]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 1.105      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_100Hz_int'                                                                                    ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -1.675 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 0.000        ; 1.816      ; 0.657      ;
+; -1.175 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; -0.500       ; 1.816      ; 0.657      ;
+; 0.391  ; count_10Hz[0]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_10Hz[1]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391  ; count_10Hz[2]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.535  ; count_10Hz[2]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.801      ;
+; 0.539  ; count_10Hz[1]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.805      ;
+; 0.539  ; count_10Hz[1]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.805      ;
+; 0.704  ; count_10Hz[0]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.970      ;
+; 0.779  ; count_10Hz[2]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 1.045      ;
+; 0.812  ; count_10Hz[1]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 1.078      ;
+; 0.838  ; count_10Hz[0]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 1.104      ;
+; 0.839  ; count_10Hz[0]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 1.105      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Slow Model Hold: 'clock_10Hz_int'                                                                                ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node       ; Launch Clock   ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; 0.391 ; count_1Hz[2]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; count_1Hz[0]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; count_1Hz[1]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.391 ; clock_1Hz_int ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.657      ;
+; 0.533 ; count_1Hz[0]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.799      ;
+; 0.533 ; count_1Hz[1]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.799      ;
+; 0.536 ; count_1Hz[1]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.802      ;
+; 0.536 ; count_1Hz[1]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.802      ;
+; 0.766 ; count_1Hz[2]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 1.032      ;
+; 0.799 ; count_1Hz[2]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 1.065      ;
+; 0.837 ; count_1Hz[0]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 1.103      ;
+; 0.840 ; count_1Hz[0]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 1.106      ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_50MHz'                                                                       ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock       ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock_50MHz ; Rise       ; clock_50MHz                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100Hz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100Hz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100KHz~reg0            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100KHz~reg0            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10Hz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10Hz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10KHz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10KHz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1Hz~reg0               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1Hz~reg0               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1KHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1KHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz_int               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz_int               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[0]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[0]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[1]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[1]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[2]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[2]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[3]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[3]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[4]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[4]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[5]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[5]                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100Hz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100Hz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100KHz~reg0|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100KHz~reg0|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10Hz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10Hz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10KHz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10KHz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1Hz~reg0|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1Hz~reg0|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1KHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1KHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz_int|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz_int|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[2]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[2]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[4]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[4]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[5]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[5]|clk            ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_100Hz_int'                                                                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_10Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_10Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_10Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_10Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[2]|clk                ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_100KHz_int'                                                                            ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target                            ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_10KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_10KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_10KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_10KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[2]|clk                ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_10Hz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_1Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_1Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_1Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_1Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[2]|clk                ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_10KHz_int'                                                                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_1KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_1KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_1KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_1KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[2]|clk                ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_1KHz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_100Hz_int                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_100Hz_int                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[0]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[0]                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[1]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[1]                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[2]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_100Hz_int|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_100Hz_int|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[0]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[0]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[1]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[1]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[2]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[2]|clk              ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Slow Model Minimum Pulse Width: 'clock_1MHz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_100KHz_int                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_100KHz_int                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[0]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[0]                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[1]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[1]                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[2]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[2]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_100KHz_int|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_100KHz_int|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[0]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[0]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[1]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[1]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[2]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[2]|clk             ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 5.998 ; 5.998 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 5.906 ; 5.906 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 6.035 ; 6.035 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 6.032 ; 6.032 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 6.002 ; 6.002 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 5.998 ; 5.998 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 5.906 ; 5.906 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 6.035 ; 6.035 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 6.032 ; 6.032 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 6.002 ; 6.002 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++-------------------------------------------+
+; Fast Model Setup Summary                  ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_50MHz      ; -0.025 ; -0.150        ;
+; clock_10Hz_int   ; 0.504  ; 0.000         ;
+; clock_10KHz_int  ; 0.505  ; 0.000         ;
+; clock_1MHz_int   ; 0.506  ; 0.000         ;
+; clock_1KHz_int   ; 0.507  ; 0.000         ;
+; clock_100Hz_int  ; 0.508  ; 0.000         ;
+; clock_100KHz_int ; 0.508  ; 0.000         ;
++------------------+--------+---------------+
+
+
++-------------------------------------------+
+; Fast Model Hold Summary                   ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_50MHz      ; -1.249 ; -7.014        ;
+; clock_1KHz_int   ; -1.208 ; -1.208        ;
+; clock_100KHz_int ; -1.109 ; -1.109        ;
+; clock_1MHz_int   ; -1.070 ; -1.070        ;
+; clock_10KHz_int  ; -1.066 ; -1.066        ;
+; clock_100Hz_int  ; -1.026 ; -1.026        ;
+; clock_10Hz_int   ; 0.215  ; 0.000         ;
++------------------+--------+---------------+
+
+
+-------------------------------
+; Fast Model Recovery Summary ;
+-------------------------------
+No paths to report.
+
+
+------------------------------
+; Fast Model Removal Summary ;
+------------------------------
+No paths to report.
+
+
++-------------------------------------------+
+; Fast Model Minimum Pulse Width Summary    ;
++------------------+--------+---------------+
+; Clock            ; Slack  ; End Point TNS ;
++------------------+--------+---------------+
+; clock_50MHz      ; -1.380 ; -15.380       ;
+; clock_100Hz_int  ; -0.500 ; -4.000        ;
+; clock_100KHz_int ; -0.500 ; -4.000        ;
+; clock_10Hz_int   ; -0.500 ; -4.000        ;
+; clock_10KHz_int  ; -0.500 ; -4.000        ;
+; clock_1KHz_int   ; -0.500 ; -4.000        ;
+; clock_1MHz_int   ; -0.500 ; -4.000        ;
++------------------+--------+---------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_50MHz'                                                                                         ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node           ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; -0.025 ; count_1MHz[2]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; count_1MHz[2]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; count_1MHz[2]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; count_1MHz[2]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; count_1MHz[2]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.025 ; count_1MHz[2]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.057      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; -0.011 ; count_1MHz[3]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 1.043      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.057  ; count_1MHz[0]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.975      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.113  ; count_1MHz[1]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.919      ;
+; 0.132  ; count_1MHz[4]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.028     ; 0.872      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.157  ; count_1MHz[5]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.875      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.190  ; count_1MHz[4]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 1.000        ; 0.000      ; 0.842      ;
+; 0.194  ; count_1MHz[3]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.028     ; 0.810      ;
+; 0.251  ; count_1MHz[5]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 1.000        ; -0.028     ; 0.753      ;
+; 0.829  ; clock_1Hz_int    ; clock_1Hz~reg0    ; clock_10Hz_int   ; clock_50MHz ; 1.000        ; 0.194      ; 0.397      ;
+; 1.399  ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 0.500        ; 1.420      ; 0.694      ;
+; 1.519  ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 0.500        ; 1.406      ; 0.560      ;
+; 1.520  ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 0.500        ; 1.406      ; 0.559      ;
+; 1.607  ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 0.500        ; 1.406      ; 0.472      ;
+; 1.620  ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 0.500        ; 1.420      ; 0.473      ;
+; 1.629  ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 0.500        ; 1.420      ; 0.464      ;
+; 1.899  ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 1.000        ; 1.420      ; 0.694      ;
+; 2.019  ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 1.000        ; 1.406      ; 0.560      ;
+; 2.020  ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 1.000        ; 1.406      ; 0.559      ;
+; 2.107  ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 1.000        ; 1.406      ; 0.472      ;
+; 2.120  ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 1.000        ; 1.420      ; 0.473      ;
+; 2.129  ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 1.000        ; 1.420      ; 0.464      ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_10Hz_int'                                                                               ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node       ; Launch Clock   ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; 0.504 ; count_1Hz[0]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.528      ;
+; 0.508 ; count_1Hz[0]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.524      ;
+; 0.520 ; count_1Hz[2]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.512      ;
+; 0.523 ; count_1Hz[2]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.509      ;
+; 0.630 ; count_1Hz[1]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.402      ;
+; 0.630 ; count_1Hz[1]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.402      ;
+; 0.632 ; count_1Hz[0]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.400      ;
+; 0.633 ; count_1Hz[1]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.399      ;
+; 0.665 ; clock_1Hz_int ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_1Hz[2]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_1Hz[0]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_1Hz[1]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 1.000        ; 0.000      ; 0.367      ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_10KHz_int'                                                                                  ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; 0.505 ; count_1KHz[1]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.527      ;
+; 0.513 ; count_1KHz[0]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.519      ;
+; 0.515 ; count_1KHz[0]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.517      ;
+; 0.520 ; count_1KHz[2]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.512      ;
+; 0.634 ; count_1KHz[1]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.398      ;
+; 0.635 ; count_1KHz[0]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.397      ;
+; 0.635 ; count_1KHz[1]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.397      ;
+; 0.639 ; count_1KHz[2]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.393      ;
+; 0.665 ; count_1KHz[2]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_1KHz[0]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_1KHz[1]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 1.446 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 0.500        ; 1.140      ; 0.367      ;
+; 1.946 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 1.000        ; 1.140      ; 0.367      ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_1MHz_int'                                                                                       ;
++-------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; Slack ; From Node        ; To Node          ; Launch Clock     ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++-------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; 0.506 ; count_100KHz[2]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.526      ;
+; 0.510 ; count_100KHz[2]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.522      ;
+; 0.516 ; count_100KHz[1]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.516      ;
+; 0.517 ; count_100KHz[1]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.515      ;
+; 0.631 ; count_100KHz[0]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.401      ;
+; 0.632 ; count_100KHz[0]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.400      ;
+; 0.633 ; count_100KHz[0]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.399      ;
+; 0.634 ; count_100KHz[1]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.398      ;
+; 0.665 ; count_100KHz[0]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_100KHz[2]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_100KHz[1]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 1.450 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 0.500        ; 1.144      ; 0.367      ;
+; 1.950 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 1.000        ; 1.144      ; 0.367      ;
++-------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_1KHz_int'                                                                                    ;
++-------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock    ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; 0.507 ; count_100Hz[1]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.525      ;
+; 0.508 ; count_100Hz[1]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.524      ;
+; 0.513 ; count_100Hz[2]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.519      ;
+; 0.515 ; count_100Hz[2]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.517      ;
+; 0.560 ; count_100Hz[1]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.472      ;
+; 0.629 ; count_100Hz[0]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.403      ;
+; 0.630 ; count_100Hz[0]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.402      ;
+; 0.631 ; count_100Hz[0]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.401      ;
+; 0.665 ; count_100Hz[2]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_100Hz[0]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_100Hz[1]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 1.588 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 0.500        ; 1.282      ; 0.367      ;
+; 2.088 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 1.000        ; 1.282      ; 0.367      ;
++-------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_100Hz_int'                                                                                  ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; 0.508 ; count_10Hz[0]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.524      ;
+; 0.508 ; count_10Hz[0]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.524      ;
+; 0.513 ; count_10Hz[2]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.519      ;
+; 0.513 ; count_10Hz[1]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.519      ;
+; 0.561 ; count_10Hz[0]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.471      ;
+; 0.630 ; count_10Hz[1]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.402      ;
+; 0.630 ; count_10Hz[1]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.402      ;
+; 0.632 ; count_10Hz[2]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.400      ;
+; 0.665 ; count_10Hz[2]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_10Hz[0]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_10Hz[1]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 1.406 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 0.500        ; 1.100      ; 0.367      ;
+; 1.906 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 1.000        ; 1.100      ; 0.367      ;
++-------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Setup: 'clock_100KHz_int'                                                                                     ;
++-------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; Slack ; From Node       ; To Node         ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++-------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; 0.508 ; count_10KHz[1]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.524      ;
+; 0.509 ; count_10KHz[1]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.523      ;
+; 0.517 ; count_10KHz[0]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.515      ;
+; 0.520 ; count_10KHz[2]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.512      ;
+; 0.559 ; count_10KHz[1]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.473      ;
+; 0.634 ; count_10KHz[0]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.398      ;
+; 0.634 ; count_10KHz[0]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.398      ;
+; 0.639 ; count_10KHz[2]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.393      ;
+; 0.665 ; count_10KHz[2]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_10KHz[0]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 0.665 ; count_10KHz[1]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 1.000        ; 0.000      ; 0.367      ;
+; 1.489 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 0.500        ; 1.183      ; 0.367      ;
+; 1.989 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 1.000        ; 1.183      ; 0.367      ;
++-------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_50MHz'                                                                                          ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node           ; Launch Clock     ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+; -1.249 ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; 0.000        ; 1.420      ; 0.464      ;
+; -1.240 ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; 0.000        ; 1.420      ; 0.473      ;
+; -1.227 ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; 0.000        ; 1.406      ; 0.472      ;
+; -1.140 ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; 0.000        ; 1.406      ; 0.559      ;
+; -1.139 ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; 0.000        ; 1.406      ; 0.560      ;
+; -1.019 ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; 0.000        ; 1.420      ; 0.694      ;
+; -0.749 ; clock_100Hz_int  ; clock_100Hz~reg0  ; clock_100Hz_int  ; clock_50MHz ; -0.500       ; 1.420      ; 0.464      ;
+; -0.740 ; clock_100KHz_int ; clock_100KHz~reg0 ; clock_100KHz_int ; clock_50MHz ; -0.500       ; 1.420      ; 0.473      ;
+; -0.727 ; clock_10Hz_int   ; clock_10Hz~reg0   ; clock_10Hz_int   ; clock_50MHz ; -0.500       ; 1.406      ; 0.472      ;
+; -0.640 ; clock_1MHz_int   ; clock_1MHz~reg0   ; clock_1MHz_int   ; clock_50MHz ; -0.500       ; 1.406      ; 0.559      ;
+; -0.639 ; clock_10KHz_int  ; clock_10KHz~reg0  ; clock_10KHz_int  ; clock_50MHz ; -0.500       ; 1.406      ; 0.560      ;
+; -0.519 ; clock_1KHz_int   ; clock_1KHz~reg0   ; clock_1KHz_int   ; clock_50MHz ; -0.500       ; 1.420      ; 0.694      ;
+; 0.051  ; clock_1Hz_int    ; clock_1Hz~reg0    ; clock_10Hz_int   ; clock_50MHz ; 0.000        ; 0.194      ; 0.397      ;
+; 0.242  ; count_1MHz[5]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.394      ;
+; 0.364  ; count_1MHz[1]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.516      ;
+; 0.366  ; count_1MHz[3]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.518      ;
+; 0.377  ; count_1MHz[0]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.529      ;
+; 0.377  ; count_1MHz[2]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.529      ;
+; 0.380  ; count_1MHz[4]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.532      ;
+; 0.502  ; count_1MHz[1]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.654      ;
+; 0.504  ; count_1MHz[3]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.656      ;
+; 0.517  ; count_1MHz[0]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.669      ;
+; 0.517  ; count_1MHz[2]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.669      ;
+; 0.520  ; count_1MHz[4]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.672      ;
+; 0.537  ; count_1MHz[1]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.689      ;
+; 0.539  ; count_1MHz[3]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.691      ;
+; 0.552  ; count_1MHz[0]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.704      ;
+; 0.552  ; count_1MHz[2]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.704      ;
+; 0.572  ; count_1MHz[1]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.724      ;
+; 0.587  ; count_1MHz[0]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.739      ;
+; 0.587  ; count_1MHz[2]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.739      ;
+; 0.607  ; count_1MHz[1]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.759      ;
+; 0.622  ; count_1MHz[0]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.774      ;
+; 0.629  ; count_1MHz[5]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.028     ; 0.753      ;
+; 0.657  ; count_1MHz[0]    ; count_1MHz[5]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.809      ;
+; 0.686  ; count_1MHz[3]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.028     ; 0.810      ;
+; 0.690  ; count_1MHz[4]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.842      ;
+; 0.690  ; count_1MHz[4]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.842      ;
+; 0.690  ; count_1MHz[4]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.842      ;
+; 0.690  ; count_1MHz[4]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.842      ;
+; 0.723  ; count_1MHz[5]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.875      ;
+; 0.723  ; count_1MHz[5]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.875      ;
+; 0.723  ; count_1MHz[5]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.875      ;
+; 0.723  ; count_1MHz[5]    ; count_1MHz[4]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.875      ;
+; 0.723  ; count_1MHz[5]    ; count_1MHz[3]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.875      ;
+; 0.748  ; count_1MHz[4]    ; clock_1MHz_int    ; clock_50MHz      ; clock_50MHz ; 0.000        ; -0.028     ; 0.872      ;
+; 0.767  ; count_1MHz[1]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 0.919      ;
+; 0.891  ; count_1MHz[3]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.043      ;
+; 0.891  ; count_1MHz[3]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.043      ;
+; 0.891  ; count_1MHz[3]    ; count_1MHz[2]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.043      ;
+; 0.905  ; count_1MHz[2]    ; count_1MHz[0]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.057      ;
+; 0.905  ; count_1MHz[2]    ; count_1MHz[1]     ; clock_50MHz      ; clock_50MHz ; 0.000        ; 0.000      ; 1.057      ;
++--------+------------------+-------------------+------------------+-------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_1KHz_int'                                                                                      ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock    ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+; -1.208 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; 0.000        ; 1.282      ; 0.367      ;
+; -0.708 ; clock_100Hz_int ; clock_100Hz_int ; clock_100Hz_int ; clock_1KHz_int ; -0.500       ; 1.282      ; 0.367      ;
+; 0.215  ; count_100Hz[1]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_100Hz[2]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_100Hz[0]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.249  ; count_100Hz[0]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.401      ;
+; 0.250  ; count_100Hz[0]  ; count_100Hz[1]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.402      ;
+; 0.251  ; count_100Hz[0]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.403      ;
+; 0.320  ; count_100Hz[1]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.472      ;
+; 0.365  ; count_100Hz[2]  ; count_100Hz[0]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.517      ;
+; 0.367  ; count_100Hz[2]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.519      ;
+; 0.372  ; count_100Hz[1]  ; count_100Hz[2]  ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.524      ;
+; 0.373  ; count_100Hz[1]  ; clock_100Hz_int ; clock_1KHz_int  ; clock_1KHz_int ; 0.000        ; 0.000      ; 0.525      ;
++--------+-----------------+-----------------+-----------------+----------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_100KHz_int'                                                                                       ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; Slack  ; From Node       ; To Node         ; Launch Clock     ; Latch Clock      ; Relationship ; Clock Skew ; Data Delay ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+; -1.109 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; 0.000        ; 1.183      ; 0.367      ;
+; -0.609 ; clock_10KHz_int ; clock_10KHz_int ; clock_10KHz_int  ; clock_100KHz_int ; -0.500       ; 1.183      ; 0.367      ;
+; 0.215  ; count_10KHz[1]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_10KHz[0]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_10KHz[2]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.241  ; count_10KHz[2]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.393      ;
+; 0.246  ; count_10KHz[0]  ; count_10KHz[1]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.398      ;
+; 0.246  ; count_10KHz[0]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.398      ;
+; 0.321  ; count_10KHz[1]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.473      ;
+; 0.360  ; count_10KHz[2]  ; count_10KHz[0]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.512      ;
+; 0.363  ; count_10KHz[0]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.515      ;
+; 0.371  ; count_10KHz[1]  ; count_10KHz[2]  ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.523      ;
+; 0.372  ; count_10KHz[1]  ; clock_10KHz_int ; clock_100KHz_int ; clock_100KHz_int ; 0.000        ; 0.000      ; 0.524      ;
++--------+-----------------+-----------------+------------------+------------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_1MHz_int'                                                                                         ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; Slack  ; From Node        ; To Node          ; Launch Clock     ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+; -1.070 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; 0.000        ; 1.144      ; 0.367      ;
+; -0.570 ; clock_100KHz_int ; clock_100KHz_int ; clock_100KHz_int ; clock_1MHz_int ; -0.500       ; 1.144      ; 0.367      ;
+; 0.215  ; count_100KHz[1]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_100KHz[2]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_100KHz[0]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.246  ; count_100KHz[1]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.398      ;
+; 0.247  ; count_100KHz[0]  ; count_100KHz[1]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.399      ;
+; 0.248  ; count_100KHz[0]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.400      ;
+; 0.249  ; count_100KHz[0]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.401      ;
+; 0.363  ; count_100KHz[1]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.515      ;
+; 0.364  ; count_100KHz[1]  ; count_100KHz[2]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.516      ;
+; 0.370  ; count_100KHz[2]  ; clock_100KHz_int ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.522      ;
+; 0.374  ; count_100KHz[2]  ; count_100KHz[0]  ; clock_1MHz_int   ; clock_1MHz_int ; 0.000        ; 0.000      ; 0.526      ;
++--------+------------------+------------------+------------------+----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_10KHz_int'                                                                                    ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -1.066 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; 0.000        ; 1.140      ; 0.367      ;
+; -0.566 ; clock_1KHz_int ; clock_1KHz_int ; clock_1KHz_int  ; clock_10KHz_int ; -0.500       ; 1.140      ; 0.367      ;
+; 0.215  ; count_1KHz[0]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_1KHz[1]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_1KHz[2]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.241  ; count_1KHz[2]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.393      ;
+; 0.245  ; count_1KHz[1]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.397      ;
+; 0.245  ; count_1KHz[0]  ; count_1KHz[1]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.397      ;
+; 0.246  ; count_1KHz[1]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.398      ;
+; 0.360  ; count_1KHz[2]  ; count_1KHz[0]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.512      ;
+; 0.365  ; count_1KHz[0]  ; count_1KHz[2]  ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.517      ;
+; 0.367  ; count_1KHz[0]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.519      ;
+; 0.375  ; count_1KHz[1]  ; clock_1KHz_int ; clock_10KHz_int ; clock_10KHz_int ; 0.000        ; 0.000      ; 0.527      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_100Hz_int'                                                                                    ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node      ; To Node        ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+; -1.026 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; 0.000        ; 1.100      ; 0.367      ;
+; -0.526 ; clock_10Hz_int ; clock_10Hz_int ; clock_10Hz_int  ; clock_100Hz_int ; -0.500       ; 1.100      ; 0.367      ;
+; 0.215  ; count_10Hz[0]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_10Hz[1]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215  ; count_10Hz[2]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.248  ; count_10Hz[2]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.400      ;
+; 0.250  ; count_10Hz[1]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.402      ;
+; 0.250  ; count_10Hz[1]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.402      ;
+; 0.319  ; count_10Hz[0]  ; count_10Hz[1]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.471      ;
+; 0.367  ; count_10Hz[2]  ; count_10Hz[0]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.519      ;
+; 0.367  ; count_10Hz[1]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.519      ;
+; 0.372  ; count_10Hz[0]  ; count_10Hz[2]  ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.524      ;
+; 0.372  ; count_10Hz[0]  ; clock_10Hz_int ; clock_100Hz_int ; clock_100Hz_int ; 0.000        ; 0.000      ; 0.524      ;
++--------+----------------+----------------+-----------------+-----------------+--------------+------------+------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Fast Model Hold: 'clock_10Hz_int'                                                                                ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; Slack ; From Node     ; To Node       ; Launch Clock   ; Latch Clock    ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+; 0.215 ; count_1Hz[2]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; count_1Hz[0]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; count_1Hz[1]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.215 ; clock_1Hz_int ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.367      ;
+; 0.247 ; count_1Hz[1]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.399      ;
+; 0.248 ; count_1Hz[0]  ; count_1Hz[1]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.400      ;
+; 0.250 ; count_1Hz[1]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.402      ;
+; 0.250 ; count_1Hz[1]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.402      ;
+; 0.357 ; count_1Hz[2]  ; count_1Hz[0]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.509      ;
+; 0.360 ; count_1Hz[2]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.512      ;
+; 0.372 ; count_1Hz[0]  ; count_1Hz[2]  ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.524      ;
+; 0.376 ; count_1Hz[0]  ; clock_1Hz_int ; clock_10Hz_int ; clock_10Hz_int ; 0.000        ; 0.000      ; 0.528      ;
++-------+---------------+---------------+----------------+----------------+--------------+------------+------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_50MHz'                                                                       ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock       ; Clock Edge ; Target                       ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+; -1.380 ; 1.000        ; 2.380          ; Port Rate        ; clock_50MHz ; Rise       ; clock_50MHz                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100Hz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100Hz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100KHz~reg0            ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100KHz~reg0            ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10Hz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10Hz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10KHz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10KHz~reg0             ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1Hz~reg0               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1Hz~reg0               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1KHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1KHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz_int               ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz_int               ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz~reg0              ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[0]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[0]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[1]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[1]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[2]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[2]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[3]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[3]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[4]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[4]                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[5]                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[5]                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100Hz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100Hz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_100KHz~reg0|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_100KHz~reg0|clk        ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10Hz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10Hz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_10KHz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_10KHz~reg0|clk         ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1Hz~reg0|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1Hz~reg0|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1KHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1KHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz_int|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz_int|clk           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_1MHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_1MHz~reg0|clk          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz|combout          ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; clock_50MHz~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[0]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[1]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[2]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[2]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[3]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[4]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[4]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_50MHz ; Rise       ; count_1MHz[5]|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_50MHz ; Rise       ; count_1MHz[5]|clk            ;
++--------+--------------+----------------+------------------+-------------+------------+------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_100Hz_int'                                                                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_10Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_10Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_100Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; clock_10Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; clock_10Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100Hz_int ; Rise       ; count_10Hz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100Hz_int ; Rise       ; count_10Hz[2]|clk                ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_100KHz_int'                                                                            ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock            ; Clock Edge ; Target                            ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_10KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_10KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_100KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; clock_10KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; clock_10KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_100KHz_int ; Rise       ; count_10KHz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_100KHz_int ; Rise       ; count_10KHz[2]|clk                ;
++--------+--------------+----------------+------------------+------------------+------------+-----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_10Hz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_1Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_1Hz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_10Hz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; clock_1Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; clock_1Hz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10Hz_int ; Rise       ; count_1Hz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10Hz_int ; Rise       ; count_1Hz[2]|clk                ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_10KHz_int'                                                                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock           ; Clock Edge ; Target                           ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_1KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_1KHz_int                   ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[0]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[1]                    ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[2]                    ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[2]                    ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_10KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; clock_1KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; clock_1KHz_int|clk               ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[0]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[1]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_10KHz_int ; Rise       ; count_1KHz[2]|clk                ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_10KHz_int ; Rise       ; count_1KHz[2]|clk                ;
++--------+--------------+----------------+------------------+-----------------+------------+----------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_1KHz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_100Hz_int                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_100Hz_int                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[0]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[0]                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[1]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[1]                  ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[2]                  ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[2]                  ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_100Hz_int|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_100Hz_int|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; clock_1KHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[0]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[0]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[1]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[1]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1KHz_int ; Rise       ; count_100Hz[2]|clk              ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1KHz_int ; Rise       ; count_100Hz[2]|clk              ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Fast Model Minimum Pulse Width: 'clock_1MHz_int'                                                                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; Slack  ; Actual Width ; Required Width ; Type             ; Clock          ; Clock Edge ; Target                          ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_100KHz_int                ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_100KHz_int                ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[0]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[0]                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[1]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[1]                 ;
+; -0.500 ; 0.500        ; 1.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[2]                 ;
+; -0.500 ; 0.500        ; 1.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[2]                 ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_100KHz_int|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_100KHz_int|clk            ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int|regout           ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|inclk[0] ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; clock_1MHz_int~clkctrl|outclk   ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[0]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[0]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[1]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[1]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; High Pulse Width ; clock_1MHz_int ; Rise       ; count_100KHz[2]|clk             ;
+; 0.500  ; 0.500        ; 0.000          ; Low Pulse Width  ; clock_1MHz_int ; Rise       ; count_100KHz[2]|clk             ;
++--------+--------------+----------------+------------------+----------------+------------+---------------------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 3.424 ; 3.424 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 3.346 ; 3.346 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 3.299 ; 3.299 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 3.364 ; 3.364 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 3.348 ; 3.348 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 3.424 ; 3.424 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 3.346 ; 3.346 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 3.299 ; 3.299 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 3.364 ; 3.364 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 3.348 ; 3.348 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                             ;
++-------------------+--------+---------+----------+---------+---------------------+
+; Clock             ; Setup  ; Hold    ; Recovery ; Removal ; Minimum Pulse Width ;
++-------------------+--------+---------+----------+---------+---------------------+
+; Worst-case Slack  ; -1.095 ; -2.027  ; N/A      ; N/A     ; -1.380              ;
+;  clock_100Hz_int  ; -0.069 ; -1.675  ; N/A      ; N/A     ; -0.500              ;
+;  clock_100KHz_int ; -0.068 ; -1.865  ; N/A      ; N/A     ; -0.500              ;
+;  clock_10Hz_int   ; -0.070 ; 0.215   ; N/A      ; N/A     ; -0.500              ;
+;  clock_10KHz_int  ; -0.069 ; -1.730  ; N/A      ; N/A     ; -0.500              ;
+;  clock_1KHz_int   ; -0.070 ; -2.027  ; N/A      ; N/A     ; -0.500              ;
+;  clock_1MHz_int   ; -0.062 ; -1.732  ; N/A      ; N/A     ; -0.500              ;
+;  clock_50MHz      ; -1.095 ; -1.930  ; N/A      ; N/A     ; -1.380              ;
+; Design-wide TNS   ; -8.134 ; -19.676 ; 0.0      ; 0.0     ; -39.38              ;
+;  clock_100Hz_int  ; -0.146 ; -1.675  ; N/A      ; N/A     ; -4.000              ;
+;  clock_100KHz_int ; -0.136 ; -1.865  ; N/A      ; N/A     ; -4.000              ;
+;  clock_10Hz_int   ; -0.137 ; 0.000   ; N/A      ; N/A     ; -4.000              ;
+;  clock_10KHz_int  ; -0.106 ; -1.730  ; N/A      ; N/A     ; -4.000              ;
+;  clock_1KHz_int   ; -0.146 ; -2.027  ; N/A      ; N/A     ; -4.000              ;
+;  clock_1MHz_int   ; -0.133 ; -1.732  ; N/A      ; N/A     ; -4.000              ;
+;  clock_50MHz      ; -7.330 ; -10.647 ; N/A      ; N/A     ; -15.380             ;
++-------------------+--------+---------+----------+---------+---------------------+
+
+
++---------------------------------------------------------------------------+
+; Clock to Output Times                                                     ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 5.998 ; 5.998 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 5.906 ; 5.906 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 6.035 ; 6.035 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 6.039 ; 6.039 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 6.032 ; 6.032 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 6.002 ; 6.002 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------+
+; Minimum Clock to Output Times                                             ;
++--------------+-------------+-------+-------+------------+-----------------+
+; Data Port    ; Clock Port  ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
++--------------+-------------+-------+-------+------------+-----------------+
+; clock_1Hz    ; clock_50MHz ; 3.424 ; 3.424 ; Rise       ; clock_50MHz     ;
+; clock_1KHz   ; clock_50MHz ; 3.346 ; 3.346 ; Rise       ; clock_50MHz     ;
+; clock_1MHz   ; clock_50MHz ; 3.299 ; 3.299 ; Rise       ; clock_50MHz     ;
+; clock_10Hz   ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_10KHz  ; clock_50MHz ; 3.362 ; 3.362 ; Rise       ; clock_50MHz     ;
+; clock_100Hz  ; clock_50MHz ; 3.364 ; 3.364 ; Rise       ; clock_50MHz     ;
+; clock_100KHz ; clock_50MHz ; 3.348 ; 3.348 ; Rise       ; clock_50MHz     ;
++--------------+-------------+-------+-------+------------+-----------------+
+
+
++---------------------------------------------------------------------------------+
+; Setup Transfers                                                                 ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; clock_1KHz_int   ; clock_1KHz_int   ; 11       ; 0        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_1KHz_int   ; 1        ; 1        ; 0        ; 0        ;
+; clock_1MHz_int   ; clock_1MHz_int   ; 11       ; 0        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_1MHz_int   ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_10Hz_int   ; 12       ; 0        ; 0        ; 0        ;
+; clock_1KHz_int   ; clock_10KHz_int  ; 1        ; 1        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_10KHz_int  ; 11       ; 0        ; 0        ; 0        ;
+; clock_1KHz_int   ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_1MHz_int   ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_50MHz      ; 2        ; 1        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_50MHz      ; clock_50MHz      ; 60       ; 0        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_100Hz_int  ; 1        ; 1        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_100Hz_int  ; 11       ; 0        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_100KHz_int ; 1        ; 1        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_100KHz_int ; 11       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++---------------------------------------------------------------------------------+
+; Hold Transfers                                                                  ;
++------------------+------------------+----------+----------+----------+----------+
+; From Clock       ; To Clock         ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++------------------+------------------+----------+----------+----------+----------+
+; clock_1KHz_int   ; clock_1KHz_int   ; 11       ; 0        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_1KHz_int   ; 1        ; 1        ; 0        ; 0        ;
+; clock_1MHz_int   ; clock_1MHz_int   ; 11       ; 0        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_1MHz_int   ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_10Hz_int   ; 12       ; 0        ; 0        ; 0        ;
+; clock_1KHz_int   ; clock_10KHz_int  ; 1        ; 1        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_10KHz_int  ; 11       ; 0        ; 0        ; 0        ;
+; clock_1KHz_int   ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_1MHz_int   ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_50MHz      ; 2        ; 1        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_50MHz      ; clock_50MHz      ; 60       ; 0        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_50MHz      ; 1        ; 1        ; 0        ; 0        ;
+; clock_10Hz_int   ; clock_100Hz_int  ; 1        ; 1        ; 0        ; 0        ;
+; clock_100Hz_int  ; clock_100Hz_int  ; 11       ; 0        ; 0        ; 0        ;
+; clock_10KHz_int  ; clock_100KHz_int ; 1        ; 1        ; 0        ; 0        ;
+; clock_100KHz_int ; clock_100KHz_int ; 11       ; 0        ; 0        ; 0        ;
++------------------+------------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths                            ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 0     ; 0    ;
+; Unconstrained Input Port Paths  ; 0     ; 0    ;
+; Unconstrained Output Ports      ; 7     ; 7    ;
+; Unconstrained Output Port Paths ; 7     ; 7    ;
++---------------------------------+-------+------+
+
+
++------------------------------------+
+; TimeQuest Timing Analyzer Messages ;
++------------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Thu Nov 27 18:24:52 2014
+Info: Command: quartus_sta divisor_frecuencia -c divisor_frecuencia
+Info: qsta_default_script.tcl version: #1
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'divisor_frecuencia.sdc'. A Synopsys Design Constraints File is required by the TimeQuest Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name clock_50MHz clock_50MHz
+    Info (332105): create_clock -period 1.000 -name clock_1MHz_int clock_1MHz_int
+    Info (332105): create_clock -period 1.000 -name clock_100KHz_int clock_100KHz_int
+    Info (332105): create_clock -period 1.000 -name clock_10KHz_int clock_10KHz_int
+    Info (332105): create_clock -period 1.000 -name clock_1KHz_int clock_1KHz_int
+    Info (332105): create_clock -period 1.000 -name clock_100Hz_int clock_100Hz_int
+    Info (332105): create_clock -period 1.000 -name clock_10Hz_int clock_10Hz_int
+Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Analyzing Slow Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -1.095
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.095        -7.330 clock_50MHz 
+    Info (332119):    -0.070        -0.146 clock_1KHz_int 
+    Info (332119):    -0.070        -0.137 clock_10Hz_int 
+    Info (332119):    -0.069        -0.146 clock_100Hz_int 
+    Info (332119):    -0.069        -0.106 clock_10KHz_int 
+    Info (332119):    -0.068        -0.136 clock_100KHz_int 
+    Info (332119):    -0.062        -0.133 clock_1MHz_int 
+Info (332146): Worst-case hold slack is -2.027
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -2.027        -2.027 clock_1KHz_int 
+    Info (332119):    -1.930       -10.647 clock_50MHz 
+    Info (332119):    -1.865        -1.865 clock_100KHz_int 
+    Info (332119):    -1.732        -1.732 clock_1MHz_int 
+    Info (332119):    -1.730        -1.730 clock_10KHz_int 
+    Info (332119):    -1.675        -1.675 clock_100Hz_int 
+    Info (332119):     0.391         0.000 clock_10Hz_int 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -15.380 clock_50MHz 
+    Info (332119):    -0.500        -4.000 clock_100Hz_int 
+    Info (332119):    -0.500        -4.000 clock_100KHz_int 
+    Info (332119):    -0.500        -4.000 clock_10Hz_int 
+    Info (332119):    -0.500        -4.000 clock_10KHz_int 
+    Info (332119):    -0.500        -4.000 clock_1KHz_int 
+    Info (332119):    -0.500        -4.000 clock_1MHz_int 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info: Analyzing Fast Model
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -0.025
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -0.025        -0.150 clock_50MHz 
+    Info (332119):     0.504         0.000 clock_10Hz_int 
+    Info (332119):     0.505         0.000 clock_10KHz_int 
+    Info (332119):     0.506         0.000 clock_1MHz_int 
+    Info (332119):     0.507         0.000 clock_1KHz_int 
+    Info (332119):     0.508         0.000 clock_100Hz_int 
+    Info (332119):     0.508         0.000 clock_100KHz_int 
+Info (332146): Worst-case hold slack is -1.249
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.249        -7.014 clock_50MHz 
+    Info (332119):    -1.208        -1.208 clock_1KHz_int 
+    Info (332119):    -1.109        -1.109 clock_100KHz_int 
+    Info (332119):    -1.070        -1.070 clock_1MHz_int 
+    Info (332119):    -1.066        -1.066 clock_10KHz_int 
+    Info (332119):    -1.026        -1.026 clock_100Hz_int 
+    Info (332119):     0.215         0.000 clock_10Hz_int 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -1.380
+    Info (332119):     Slack End Point TNS Clock 
+    Info (332119): ========= ============= =====================
+    Info (332119):    -1.380       -15.380 clock_50MHz 
+    Info (332119):    -0.500        -4.000 clock_100Hz_int 
+    Info (332119):    -0.500        -4.000 clock_100KHz_int 
+    Info (332119):    -0.500        -4.000 clock_10Hz_int 
+    Info (332119):    -0.500        -4.000 clock_10KHz_int 
+    Info (332119):    -0.500        -4.000 clock_1KHz_int 
+    Info (332119):    -0.500        -4.000 clock_1MHz_int 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 383 megabytes
+    Info: Processing ended: Thu Nov 27 18:24:53 2014
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

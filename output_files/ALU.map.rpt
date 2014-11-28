@@ -1,0 +1,568 @@
+Analysis & Synthesis report for ALU
+Fri Nov 28 00:19:01 2014
+Quartus II 64-Bit Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Port Connectivity Checks: "Sumador:U10"
+ 12. Port Connectivity Checks: "det_11011:U8"
+ 13. Port Connectivity Checks: "invertir_orden:U7"
+ 14. Port Connectivity Checks: "cont_ceros:U6"
+ 15. Port Connectivity Checks: "C_7seg:U3"
+ 16. Port Connectivity Checks: "C_Gray:U1"
+ 17. Elapsed Time Per Partition
+ 18. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Fri Nov 28 00:19:01 2014      ;
+; Quartus II 64-Bit Version          ; 13.0.0 Build 156 04/24/2013 SJ Web Edition ;
+; Revision Name                      ; ALU                                        ;
+; Top-level Entity Name              ; ALU                                        ;
+; Family                             ; Cyclone II                                 ;
+; Total logic elements               ; 232                                        ;
+;     Total combinational functions  ; 232                                        ;
+;     Dedicated logic registers      ; 0                                          ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 52                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Top-level entity name                                                      ; ALU                ; ALU                ;
+; Family name                                                                ; Cyclone II         ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 2      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                        ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path ; Library ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
+; acp_sumador.vhd                  ; yes             ; User VHDL File  ; D:/ALU/acp_sumador.vhd       ;         ;
+; Sumador.vhd                      ; yes             ; User VHDL File  ; D:/ALU/Sumador.vhd           ;         ;
+; det_11011.vhd                    ; yes             ; User VHDL File  ; D:/ALU/det_11011.vhd         ;         ;
+; invertir_orden.vhd               ; yes             ; User VHDL File  ; D:/ALU/invertir_orden.vhd    ;         ;
+; cont_ceros.vhd                   ; yes             ; User VHDL File  ; D:/ALU/cont_ceros.vhd        ;         ;
+; comparador.vhd                   ; yes             ; User VHDL File  ; D:/ALU/comparador.vhd        ;         ;
+; acp_7seg_sa.vhd                  ; yes             ; User VHDL File  ; D:/ALU/acp_7seg_sa.vhd       ;         ;
+; acp_7seg.vhd                     ; yes             ; User VHDL File  ; D:/ALU/acp_7seg.vhd          ;         ;
+; C_Gray.vhd                       ; yes             ; User VHDL File  ; D:/ALU/C_Gray.vhd            ;         ;
+; C_7seg.vhd                       ; yes             ; User VHDL File  ; D:/ALU/C_7seg.vhd            ;         ;
+; ALU.vhd                          ; yes             ; User VHDL File  ; D:/ALU/ALU.vhd               ;         ;
+; componentes.vhd                  ; yes             ; User VHDL File  ; D:/ALU/componentes.vhd       ;         ;
++----------------------------------+-----------------+-----------------+------------------------------+---------+
+
+
++----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary              ;
++---------------------------------------------+------------+
+; Resource                                    ; Usage      ;
++---------------------------------------------+------------+
+; Estimated Total logic elements              ; 232        ;
+;                                             ;            ;
+; Total combinational functions               ; 232        ;
+; Logic element usage by number of LUT inputs ;            ;
+;     -- 4 input functions                    ; 102        ;
+;     -- 3 input functions                    ; 113        ;
+;     -- <=2 input functions                  ; 17         ;
+;                                             ;            ;
+; Logic elements by mode                      ;            ;
+;     -- normal mode                          ; 174        ;
+;     -- arithmetic mode                      ; 58         ;
+;                                             ;            ;
+; Total registers                             ; 0          ;
+;     -- Dedicated logic registers            ; 0          ;
+;     -- I/O registers                        ; 0          ;
+;                                             ;            ;
+; I/O pins                                    ; 52         ;
+; Embedded Multiplier 9-bit elements          ; 0          ;
+; Maximum fan-out node                        ; Sel_ALU[1] ;
+; Maximum fan-out                             ; 31         ;
+; Total fan-out                               ; 787        ;
+; Average fan-out                             ; 2.77       ;
++---------------------------------------------+------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+; |ALU                       ; 232 (73)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 52   ; 0            ; |ALU                ;              ;
+;    |C_7seg:U3|             ; 15 (15)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|C_7seg:U3      ;              ;
+;    |C_Gray:U1|             ; 7 (7)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|C_Gray:U1      ;              ;
+;    |Sumador:U10|           ; 16 (16)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|Sumador:U10    ;              ;
+;    |comparador:U5|         ; 75 (75)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|comparador:U5  ;              ;
+;    |cont_ceros:U6|         ; 25 (25)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|cont_ceros:U6  ;              ;
+;    |det_11011:U8|          ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ALU|det_11011:U8   ;              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++----------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                ;
++-----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------+------------------------+
+; Y[0]$latch                                          ; Mux16               ; yes                    ;
+; Y[1]$latch                                          ; Mux16               ; yes                    ;
+; Y[2]$latch                                          ; Mux16               ; yes                    ;
+; Y[3]$latch                                          ; Mux16               ; yes                    ;
+; Y[4]$latch                                          ; Mux16               ; yes                    ;
+; Y[5]$latch                                          ; Mux16               ; yes                    ;
+; Y[6]$latch                                          ; Mux16               ; yes                    ;
+; Y[7]$latch                                          ; Mux16               ; yes                    ;
+; Y[8]$latch                                          ; Mux16               ; yes                    ;
+; Y[9]$latch                                          ; Mux16               ; yes                    ;
+; Y[10]$latch                                         ; Mux16               ; yes                    ;
+; Y[11]$latch                                         ; Mux16               ; yes                    ;
+; Y[12]$latch                                         ; Mux16               ; yes                    ;
+; Y[13]$latch                                         ; Mux16               ; yes                    ;
+; Y[14]$latch                                         ; Mux16               ; yes                    ;
+; Y[15]$latch                                         ; Mux16               ; yes                    ;
+; C_7seg:U3|Y[0]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; comparador:U5|Y[0]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[1]                                  ; comparador:U5|Y[15] ; yes                    ;
+; C_7seg:U3|Y[1]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; C_7seg:U3|Y[2]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; comparador:U5|Y[2]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[3]                                  ; comparador:U5|Y[15] ; yes                    ;
+; C_7seg:U3|Y[3]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; C_7seg:U3|Y[4]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; comparador:U5|Y[4]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[5]                                  ; comparador:U5|Y[15] ; yes                    ;
+; C_7seg:U3|Y[5]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; comparador:U5|Y[6]                                  ; comparador:U5|Y[15] ; yes                    ;
+; C_7seg:U3|Y[6]                                      ; C_7seg:U3|Mux13     ; yes                    ;
+; comparador:U5|Y[7]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[8]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[9]                                  ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[10]                                 ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[11]                                 ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[12]                                 ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[13]                                 ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[14]                                 ; comparador:U5|Y[15] ; yes                    ;
+; comparador:U5|Y[15]                                 ; comparador:U5|Y[15] ; yes                    ;
+; Number of user-specified and inferred latches = 39  ;                     ;                        ;
++-----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 3:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |ALU|comparador:U5|Y[0]    ;
+; 7:1                ; 9 bits    ; 36 LEs        ; 27 LEs               ; 9 LEs                  ; No         ; |ALU|Mux7                  ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |ALU|Mux5                  ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |ALU|Mux1                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Sumador:U10"                                                                                                                                ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; cin  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "det_11011:U8"                                                                                                                               ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "invertir_orden:U7"                                                                                                                          ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "cont_ceros:U6"                                                                                                                              ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "C_7seg:U3"                                                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "C_Gray:U1"                                                                                                                                  ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                                                                                                      ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; sel  ; Input ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
++------+-------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:01     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.0 Build 156 04/24/2013 SJ Web Edition
+    Info: Processing started: Fri Nov 28 00:18:53 2014
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ALU -c ALU
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file acp_sumador.vhd
+    Info (12022): Found design unit 1: acp_sumador-rtl
+    Info (12023): Found entity 1: acp_sumador
+Info (12021): Found 2 design units, including 1 entities, in source file sumador.vhd
+    Info (12022): Found design unit 1: Sumador-behave
+    Info (12023): Found entity 1: Sumador
+Info (12021): Found 2 design units, including 1 entities, in source file det_11011.vhd
+    Info (12022): Found design unit 1: det_11011-rtl
+    Info (12023): Found entity 1: det_11011
+Info (12021): Found 2 design units, including 1 entities, in source file invertir_orden.vhd
+    Info (12022): Found design unit 1: invertir_orden-orden
+    Info (12023): Found entity 1: invertir_orden
+Info (12021): Found 2 design units, including 1 entities, in source file cont_ceros.vhd
+    Info (12022): Found design unit 1: cont_ceros-comportamiento
+    Info (12023): Found entity 1: cont_ceros
+Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
+    Info (12022): Found design unit 1: comparador-archicompara
+    Info (12023): Found entity 1: comparador
+Info (12021): Found 2 design units, including 1 entities, in source file acp_7seg_sa.vhd
+    Info (12022): Found design unit 1: acp_7seg_sa-rtl
+    Info (12023): Found entity 1: acp_7seg_sa
+Info (12021): Found 2 design units, including 1 entities, in source file acp_7seg.vhd
+    Info (12022): Found design unit 1: acp_7seg-rtl
+    Info (12023): Found entity 1: acp_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file c_gray.vhd
+    Info (12022): Found design unit 1: C_Gray-rtl
+    Info (12023): Found entity 1: C_Gray
+Info (12021): Found 2 design units, including 1 entities, in source file c_7seg.vhd
+    Info (12022): Found design unit 1: C_7seg-rtl
+    Info (12023): Found entity 1: C_7seg
+Info (12021): Found 2 design units, including 1 entities, in source file alu.vhd
+    Info (12022): Found design unit 1: ALU-RTL
+    Info (12023): Found entity 1: ALU
+Info (12021): Found 1 design units, including 0 entities, in source file componentes.vhd
+    Info (12022): Found design unit 1: componentes
+Info (12127): Elaborating entity "ALU" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at ALU.vhd(34): signal "yo0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(35): signal "yo1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(36): signal "yo2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(37): signal "yo3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(38): signal "yo4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(39): signal "yo5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at ALU.vhd(40): signal "yo6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at ALU.vhd(31): inferring latch(es) for signal or variable "Y", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Y[0]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[1]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[2]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[3]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[4]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[5]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[6]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[7]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[8]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[9]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[10]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[11]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[12]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[13]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[14]" at ALU.vhd(31)
+Info (10041): Inferred latch for "Y[15]" at ALU.vhd(31)
+Info (12128): Elaborating entity "C_Gray" for hierarchy "C_Gray:U1"
+Info (12128): Elaborating entity "acp_7seg" for hierarchy "acp_7seg:U2"
+Info (12128): Elaborating entity "C_7seg" for hierarchy "C_7seg:U3"
+Warning (10492): VHDL Process Statement warning at C_7seg.vhd(21): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at C_7seg.vhd(19): inferring latch(es) for signal or variable "Y", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Y[0]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[1]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[2]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[3]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[4]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[5]" at C_7seg.vhd(19)
+Info (10041): Inferred latch for "Y[6]" at C_7seg.vhd(19)
+Info (12128): Elaborating entity "acp_7seg_sa" for hierarchy "acp_7seg_sa:U4"
+Info (12128): Elaborating entity "comparador" for hierarchy "comparador:U5"
+Warning (10631): VHDL Process Statement warning at comparador.vhd(15): inferring latch(es) for signal or variable "Y", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "Y[0]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[1]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[2]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[3]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[4]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[5]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[6]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[7]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[8]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[9]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[10]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[11]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[12]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[13]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[14]" at comparador.vhd(15)
+Info (10041): Inferred latch for "Y[15]" at comparador.vhd(15)
+Info (12128): Elaborating entity "cont_ceros" for hierarchy "cont_ceros:U6"
+Warning (10492): VHDL Process Statement warning at cont_ceros.vhd(22): signal "A" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cont_ceros.vhd(24): signal "B" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "invertir_orden" for hierarchy "invertir_orden:U7"
+Warning (10492): VHDL Process Statement warning at invertir_orden.vhd(20): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Info (12128): Elaborating entity "det_11011" for hierarchy "det_11011:U8"
+Info (12128): Elaborating entity "acp_sumador" for hierarchy "acp_sumador:U9"
+Info (12128): Elaborating entity "Sumador" for hierarchy "Sumador:U10"
+Warning (12241): 6 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13012): Latch Y[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[1]
+Warning (13012): Latch Y[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[1]
+Warning (13012): Latch Y[4]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[2]
+Warning (13012): Latch Y[5]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[6]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[7]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[8]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[9]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[10]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[11]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[12]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[13]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[14]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch Y[15]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal Sel_ALU[0]
+Warning (13012): Latch C_7seg:U3|Y[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[13]
+Warning (13012): Latch comparador:U5|Y[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[0]
+Warning (13012): Latch comparador:U5|Y[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[1]
+Warning (13012): Latch C_7seg:U3|Y[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[13]
+Warning (13012): Latch C_7seg:U3|Y[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[13]
+Warning (13012): Latch comparador:U5|Y[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[2]
+Warning (13012): Latch comparador:U5|Y[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[3]
+Warning (13012): Latch C_7seg:U3|Y[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[14]
+Warning (13012): Latch C_7seg:U3|Y[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[13]
+Warning (13012): Latch comparador:U5|Y[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[4]
+Warning (13012): Latch comparador:U5|Y[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[5]
+Warning (13012): Latch C_7seg:U3|Y[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[14]
+Warning (13012): Latch comparador:U5|Y[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[6]
+Warning (13012): Latch C_7seg:U3|Y[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_B[13]
+Warning (13012): Latch comparador:U5|Y[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[7]
+Warning (13012): Latch comparador:U5|Y[8] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[8]
+Warning (13012): Latch comparador:U5|Y[9] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[9]
+Warning (13012): Latch comparador:U5|Y[10] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[10]
+Warning (13012): Latch comparador:U5|Y[11] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[11]
+Warning (13012): Latch comparador:U5|Y[12] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[12]
+Warning (13012): Latch comparador:U5|Y[13] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[13]
+Warning (13012): Latch comparador:U5|Y[14] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[14]
+Warning (13012): Latch comparador:U5|Y[15] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal I_A[15]
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 284 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 36 input pins
+    Info (21059): Implemented 16 output pins
+    Info (21061): Implemented 232 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 94 warnings
+    Info: Peak virtual memory: 479 megabytes
+    Info: Processing ended: Fri Nov 28 00:19:01 2014
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:03
+
+
